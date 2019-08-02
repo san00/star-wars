@@ -1,0 +1,13 @@
+.footer {
+    background-color: $secondary-background-colour;
+    border-top-left-radius: 0.2em;
+    border-top-right-radius: 0.2em;
+    color: $primary-text-colour;
+    display: flex;
+    font-size: $body-text;
+    padding: $spacing-m;
+}
+
+.link {
+    padding-left: $spacing-xs;
+}

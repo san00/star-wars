@@ -5,10 +5,10 @@ function SearchForm(props) {
     const [value, setValue] = useState("");
     return (
         <div>
-            <form  >
-            <label htmlFor="input">Search for a person</label>
-                <input type="text" onChange={e => { setValue(e.target.value) }} placeholder="Enter name..." ></input>
-                <input type="submit" onClick={(e) => {
+            <form className="form">
+            <label className="form__label" htmlFor="form__input">Search for a person</label>
+                <input className="form__input" type="text" onChange={e => { setValue(e.target.value) }} placeholder="Enter name..." ></input>
+                <input className="form__input-submit" type="submit" onClick={(e) => {
                     e.preventDefault();
                     axios
                         .get(`https://swapi.co/api/people/?search=${value}`)
