@@ -1,5 +1,26 @@
-@import "./index.scss";
+ @import "./index.scss";
 
-.App {
+.app {
+    background-color: $background-colour;
+    color: $primary-text-colour;
+    display: flex;
+    flex-direction: column;
+    margin: $spacing-l;
+}
+
+.app__maintext {
+    margin-bottom: $spacing-l;
+}
+
+.app__maintext,
+.app__subtext {
+    display: flex;
+    justify-content: center;
+}
+
+.app__subtext {
+    font-size: $caption;
+    font-weight: 400;
+    margin-bottom: $spacing-l;
     padding: $spacing-l;
 }

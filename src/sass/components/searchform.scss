@@ -1,0 +1,30 @@
+.form {
+    display: flex;
+    justify-content: center;
+    margin-left: $spacing-m;
+    margin-right: $spacing-m;
+    margin-bottom: $spacing-l;
+}
+
+.form__label {
+    font-size: $body-small;
+    padding-right: $spacing-s;
+}
+
+.form__input {
+    padding:$spacing-s;
+}
+
+.form__input-submit {
+    background-color: $button-secondary-colour;
+    padding: $spacing-xs;
+}
+
+.form__input-submit:hover {
+    background-color: $button-primary-colour;
+}
+
+.form__input,
+.form__input-submit {
+    cursor: pointer;
+}
