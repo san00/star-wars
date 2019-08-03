@@ -1,18 +1,26 @@
  @import "./index.scss";
 
 .app {
-    background-color: $background-colour;
     color: $primary-text-colour;
     display: flex;
     flex-direction: column;
     margin: $spacing-l;
 }
 
-.app__maintext {
-    margin-bottom: $spacing-l;
+.app__maintext-image {
+    border-radius: 0.2em;
+    height: auto;
+    width: 100%;
 }
 
-.app__maintext,
+.app__image {
+    border-radius: 0.1em;
+    height: auto;
+    margin-bottom: $spacing-l;
+    width: 100%;
+}
+
+.people__maintext,
 .app__subtext {
     display: flex;
     justify-content: center;
@@ -20,7 +28,29 @@
 
 .app__subtext {
     font-size: $caption;
-    font-weight: 400;
-    margin-bottom: $spacing-l;
+    margin-bottom: $spacing-m;
     padding: $spacing-l;
+}
+
+//styles for data returned from API 
+.people__outer-container {
+    display: flex;
+    justify-content: center;
+
+    flex-flow: wrap;
+}
+
+.people__inner-container {
+    display: flex;
+    margin-bottom: $spacing-m;
+}
+
+.people__title,
+.people__text {
+    color: $secondary-text-colour;
+    padding: $spacing-s;
+}
+
+.people__text {
+    margin-bottom: $spacing-s;
 }

@@ -12,5 +12,12 @@
 
 .header__text {
     font-weight: 200;
-    margin-bottom:$spacing-m; 
+    margin-bottom: $spacing-m;
+}
+
+.header__image {
+    border-radius: 0.2em;
+    height: auto;
+    margin-bottom: $spacing-m;
+    width: 100%;
 }

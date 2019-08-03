@@ -1,9 +1,9 @@
 .form {
     display: flex;
     justify-content: center;
+    margin-bottom: $spacing-l;
     margin-left: $spacing-m;
     margin-right: $spacing-m;
-    margin-bottom: $spacing-l;
 }
 
 .form__label {
@@ -12,12 +12,12 @@
 }
 
 .form__input {
-    padding:$spacing-s;
+    font-size: $body-small;
+    padding: $spacing-s;
 }
 
 .form__input-submit {
     background-color: $button-secondary-colour;
-    padding: $spacing-xs;
 }
 
 .form__input-submit:hover {
